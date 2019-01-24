@@ -8,6 +8,12 @@
   <link rel="stylesheet" href="css/style.css">
   <script src="keys.js"></script>
   <script>
+
+     function start(){
+    hitotume=Math.floor(Math.random()*(7-1)+1);
+    saikoro.daisu1.value=hitotume;
+} 
+
     var ncmb = new NCMB(appKey, clientKey);
     var UTdata = ncmb.DataStore("UpdateTest");
     var key = "message";
