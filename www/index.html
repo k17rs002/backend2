@@ -9,7 +9,7 @@
   <script src="keys.js"></script>
   <script>
 
-     function start(){
+       function start(){
     hitotume=Math.floor(Math.random()*(7-1)+1);
     saikoro.daisu1.value=hitotume;
 } 
@@ -125,7 +125,14 @@
   </script>
 </head>
 <body>
-  <h1>backend test 2</h1>
+
+ <input type="button"value="ダイスロール"onclick="start()">
+<form name="saikoro">
+	<br />
+サイコロ1
+<input type="text"id="daisu1"name="daisu1">
+    <br />
+  <h1>サイコロを振れ</h1>
   <div>
     <input type="text" id="data" placeholder="スコア"> 
     <a onclick="enterData()" class="btn btn-outline-secondary" role="button">Enter</a>
